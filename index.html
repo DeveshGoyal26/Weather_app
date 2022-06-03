@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whether App</title>
+    <link rel="icon" href="./icons/cloudy-day-2.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles/index.css" />
+  </head>
+  <body>
+    <div id="whole_div">
+      <div id="upper_div">
+        <input type="text" id="city" placeholder="Enter City Name" />
+        <button onclick="getdata()" id="submit">Search</button>
+      </div>
+      <div id="lower_div">
+        <div id="left_div">
+          <div id="first">
+            Current Whether
+            <p id="time">1:00 PM</p>
+          </div>
+          <div id="second">
+            <img id="weather_icon" width="100px" />
+            <h1 id="temp"></h1>
+            <h1 id="city_name"></h1>
+            <p id="weather_des"></p>
+          </div>
+
+          <div id="weather_div"></div>
+        </div>
+        <div id="right_div">
+          <iframe loading="lazy" allowfullscreen id="map"></iframe>
+        </div>
+      </div>
+      <div id="forcast_div"></div>
+    </div>
+  </body>
+</html>
+
+<script src="./Scripts/index.js"></script>
