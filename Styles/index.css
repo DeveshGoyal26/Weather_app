@@ -43,6 +43,8 @@ body {
   color: rgb(255, 255, 255);
   background: url("https://images.pexels.com/photos/414102/pexels-photo-414102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   border-radius: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #second {
@@ -150,6 +152,11 @@ body {
 
   #lower_div {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  #right_div,
+  #left_div {
+    width: 95% !important;
   }
 
   #forcast_div {
